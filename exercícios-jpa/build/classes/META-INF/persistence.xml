@@ -6,18 +6,19 @@
     <persistence-unit name="exercicios-jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         
-        
-     	<class>modelo.Usuario</class>
-     	<class>modelo.Produto</class>
-     	<class> umPraUm2.Cliente</class>
-     	<class> umparamuitos.ItemPedido</class>
-		<class> umparamuitos.Pedido</class>    
-		<class> umPraUm2.Assento</class> 
-		<class> muitoPraMuitos.Sobrinho</class>
-		<class> muitoPraMuitos.Tio</class>
-		<class> muitoPraMuitos.Ator</class>
-		<class> muitoPraMuitos.Filme</class>
+       
+        <mapping-file>META-INF/consultas.xml </mapping-file>
 		
+		 <class>modelo.basico.Produto</class>
+     	<class>modelo.basico.Usuario</class>
+     	<class> modelo.umpraum.Cliente</class>
+     	<class> modelo.umpraum.Assento</class> 
+     	<class> modelo.umpramuitos.ItemPedido</class>
+		<class> modelo.umpramuitos.Pedido</class>    
+		<class> modelo.muitopramuitos.Sobrinho</class>
+		<class> modelo.muitopramuitos.Tio</class>
+		<class> modelo.muitopramuitos.Ator</class>
+		<class> modelo.muitopramuitos.Filme</class>
 		
 		 
         <properties>
